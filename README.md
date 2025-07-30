@@ -48,6 +48,8 @@ Copy
 Edit
 python main.py
 🛠 Structure
+
+📁 Project Structure
 bash
 Copy
 Edit
@@ -66,7 +68,17 @@ local-mcp-client/
 ├── tests/               # Unit tests
 ├── main.py              # App entry point
 └── requirements.txt     # Dependencies
+🧩 Extending the Project
+➕ Add a New Tool
+Define the function in mcp_server/tools.py:
 
+python
+Copy
+Edit
+def calculate_stats(metric: str):
+    """Calculate basic stats for a given field."""
+    # Example logic here
+    return {"average": 42.7, "count": 100}
 
 The agent will:
 
