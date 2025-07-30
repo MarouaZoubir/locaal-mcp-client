@@ -49,36 +49,26 @@ Edit
 python main.py
 🛠 Structure
 
-📁 Project Structure
-bash
-Copy
-Edit
+### 📁 Project Structure
+
+```bash
 local-mcp-client/
-├── agent/               # Agent builder and prompts
+├── agent/             # Agent builder and prompts
 │   ├── __init__.py
 │   ├── agent.py
 │   └── prompts.py
-├── mcp_server/          # SQLite & Tool logic
+├── mcp_server/        # SQLite & Tool logic
 │   ├── __init__.py
 │   ├── server.py
 │   └── tools.py
-├── llm/                 # Ollama integration setup
+├── llm/               # Ollama integration setup
 │   ├── __init__.py
 │   └── setup.py
-├── tests/               # Unit tests
-├── main.py              # App entry point
-└── requirements.txt     # Dependencies
-🧩 Extending the Project
-➕ Add a New Tool
-Define the function in mcp_server/tools.py:
+├── tests/             # Unit tests
+├── main.py            # App entry point
+└── requirements.txt   # Dependencies
+```
 
-python
-Copy
-Edit
-def calculate_stats(metric: str):
-    """Calculate basic stats for a given field."""
-    # Example logic here
-    return {"average": 42.7, "count": 100}
 
 The agent will:
 
